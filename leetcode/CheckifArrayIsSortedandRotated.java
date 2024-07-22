@@ -12,13 +12,13 @@ A[i] == B[(i+x) % A.length], where % is the modulo operation.
 public class CheckifArrayIsSortedandRotated {
     class Solution {
         public boolean check(int[] nums) {
-            int rotate =0;
-            for(int i=0;i<nums.length-1;i++){
-                if(nums[i]>nums[i+1]) rotate++;
-                if(rotate>1) return false;
+            int rotate = 0;
+            for (int i = 0; i < nums.length - 1; i++) {
+                if (nums[i] > nums[i + 1]) rotate++;
+                if (rotate > 1) return false;
             }
-            if(rotate==1){
-                if(nums[0]<nums[nums.length-1]) return false;
+            if (rotate == 1) {
+                if (nums[0] < nums[nums.length - 1]) return false;
             }
             return true;
         }

@@ -5,7 +5,6 @@ Given an array Arr of size N, print the second largest distinct element from an 
 If the second largest element doesn't exist then return -1.
  */
 public class SecondLargestElement {
-
     int print2largest(int arr[], int n) {
         int max1 = 0;
         int max2 = 0;
